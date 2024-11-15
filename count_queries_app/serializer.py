@@ -18,3 +18,13 @@ class CountQueriesSerializer(serializers.ModelSerializer):
             return data
         except Exception as err:
             return str(err)
+
+class BlogsReadSerializer(serializers.ModelSerializer):
+    comment_set = serializers.SlugRelatedField(
+        many=True,
+        read_only=True,
+        slug_field='text'
+    )
+    class Meta:
+        model = BlogPost
+        fields = ['id', 'title', 'content', 'comment_set']

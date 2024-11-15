@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'rest_framework',
 
     'count_queries_app',
+    'gfk_app',
 ]
 
 MIDDLEWARE = [

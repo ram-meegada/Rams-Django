@@ -20,4 +20,5 @@ from django.urls import path, include
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('count_queries_app.urls')),
+    path('', include('gfk_app.urls')),
 ]
