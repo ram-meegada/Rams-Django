@@ -42,6 +42,7 @@ INSTALLED_APPS = [
 
     'count_queries_app',
     'gfk_app',
+    'managers_app',
 ]
 
 MIDDLEWARE = [
